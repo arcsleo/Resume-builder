@@ -88,10 +88,16 @@ export function Skills(props: any) {
 
     const Submission = () => {
         setvalidation(false);
-        if(skillArray[0].skill !== "" && skillArray[0].year !== "")
-            callBack('Submission',skillArray,[]);
-        else
+        if(skillArray.length === 0)
+        {
             setvalidation(true);
+        }
+        else{
+            if(skillArray[0].skill !== "" && skillArray[0].year !== "")
+                callBack('Submission',skillArray,[]);
+            else
+                setvalidation(true);
+        }
     };
 
     React.useEffect(()=>{

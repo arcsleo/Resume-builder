@@ -100,10 +100,16 @@ export function Academic(props: any) {
 
     const saveFunction = () => {
         setvalidation(false);
-        if( expArray[0].company !== "" && expArray[0].desig !== "" && expArray[0].year !== "" && eduArray[0].degree !== "" && eduArray[0].institution !== "" && eduArray[0].year !== "" )
-            callBack('Skills',expArray,eduArray);
-        else
+        if(expArray.length === 0 || eduArray.length === 0)
+        {
             setvalidation(true);
+        }
+        else{
+            if( expArray[0].company !== "" && expArray[0].desig !== "" && expArray[0].year !== "" && eduArray[0].degree !== "" && eduArray[0].institution !== "" && eduArray[0].year !== "" )
+                callBack('Skills',expArray,eduArray);
+            else
+                setvalidation(true);
+        }
     }
 
     React.useEffect(()=>{
