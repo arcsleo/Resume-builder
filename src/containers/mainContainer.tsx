@@ -36,7 +36,7 @@ export function MainContainer(props: any) {
     }
 
     const tabChange = (value: string, primarydata: any, secondaryData: any) => {
-        debugger;
+        
         if( value === "Academic" )
         {
             setuserData(primarydata);
@@ -67,6 +67,10 @@ export function MainContainer(props: any) {
     }
 
     React.useEffect(()=>{
+        document.title = "Resume Builder"
+    },[]);
+
+    React.useEffect(()=>{
         dataTabChange('Personal');
     },[isDisable])
 
@@ -75,7 +79,11 @@ export function MainContainer(props: any) {
             <div className={`col-md-3 ${styles.sidediv} d-flex align-items-center flex-wrap justify-content-center`}>
                 <div className={`col-md-12 d-flex flex-wrap`}>
                     <div className={`col-md-12 ${styles.welcomeText}`}>
-                        Welcome back !!!
+                        { isDisable  ? 
+                            "Lorem ipsum"
+                        :
+                            "Welcome back !!!"
+                        }
                     </div>
                     <div className={`col-md-12 ${styles.subText}`}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tristique, arcu ac finibus vehicula, nisi nisi varius augue, quis pharetra purus metus a enim. 

@@ -39,7 +39,6 @@ export function Skills(props: any) {
     };
 
     const arraySetting = (indexVal: number, columnName: string, fieldName: string, e: any) => {
-        debugger;
         if(columnName === "skill"){
             const tempArray = [...skillArray];
             tempArray.forEach((value,index) =>{
@@ -56,7 +55,7 @@ export function Skills(props: any) {
     };
 
     const arrayUpdation = (indexVal: number, columnName: string, fieldName: string, e: any) => {
-        debugger;
+        
         if(columnName === "skill"){
             const tempArray = [...skillArray];
             tempArray.forEach((value,index) =>{
@@ -98,6 +97,10 @@ export function Skills(props: any) {
     React.useEffect(()=>{
         setskillArray(data);
     },[data]);
+
+    React.useEffect(()=>{
+        addSection('Exp');
+    },[]);
 
     return(
         <div className={`col-md-12 ${styles.boxcover} d-flex align-items-center flex-wrap p-5`}>
