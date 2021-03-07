@@ -4,6 +4,9 @@
     .sidediv{
         background-color: rgba(85, 36, 151, 1);
         height: 100vh;
+        position: fixed;
+        top: 0px;
+        left: 0px;
         .welcomeText{
             color: #fff;
             font-size: 1.7em;
@@ -15,6 +18,7 @@
         }
     }
     .tabHead{
+        margin-left: 25%;
         .singleTab{
             height: 50px;
             font-size: 18px;

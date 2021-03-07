@@ -3,6 +3,7 @@ import styles from './styles.module.scss';
 import { Redirect } from 'react-router-dom';
 import { Personal } from '../components/Personal';
 import { Academic } from '../components/Academic';
+import { View } from '../components/View';
 import { Skills } from '../components/Skills';
 
 export function MainContainer(props: any) {
@@ -82,6 +83,11 @@ export function MainContainer(props: any) {
                 </div>
             </div>
             <div className={`col-md-9 ${styles.tabHead} d-flex align-items-center flex-wrap justify-content-center`}>
+                { isDisable ? 
+                    <div className={`col-md-11 d-flex align-items-center flex-wrap justify-content-center`}>
+                        <View userData={userData} expData={experienceData} eduData={educationData} skillData={skills} callBack={pageRedirection} />
+                    </div>
+                :
                 <div className={`col-md-8 d-flex align-items-center flex-wrap justify-content-center`}>
                     <div className={`col-md-12 p-0 d-flex`}>
                         <div className={`${styles.singleTab} ${visibleComponent === "Personal" ? styles.active : null} d-flex align-items-center justify-content-center`} onClick={ ()=>dataTabChange('Personal') }>
@@ -110,6 +116,7 @@ export function MainContainer(props: any) {
                         }
                     </div>   
                 </div>
+                }
             </div>
             { redirect ?
                 <Redirect to={redirectionLink} />
