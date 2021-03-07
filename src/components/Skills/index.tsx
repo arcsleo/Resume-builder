@@ -98,10 +98,6 @@ export function Skills(props: any) {
         setskillArray(data);
     },[data]);
 
-    React.useEffect(()=>{
-        addSection('Exp');
-    },[]);
-
     return(
         <div className={`col-md-12 ${styles.boxcover} d-flex align-items-center flex-wrap p-5`}>
 
