@@ -1,0 +1,72 @@
+.boxcover{
+    border: 1px solid #9999;
+    .expHead{
+        font-size: 1.3em;
+        font-weight: 500;
+        border-bottom: 1px solid #c0c0c0;
+        outline: none;
+        background-color: #f0f0f0;
+        padding: 1% 2% !important;
+    }
+    .validation{
+        text-align: center;
+        text-align: center;
+        color: red;
+    }
+    .firstdiv{
+        width: 35%;
+        margin-right: 2.5%;
+        height: 35px;
+        border: 0px;
+        outline: none;
+        border-bottom: 1px solid #c0c0c0;
+    }
+    .seconddiv{
+        width: 15%;
+        margin-right: 2.5%;
+        height: 35px;
+        border: 0px;
+        outline: none;
+        border-bottom: 1px solid #c0c0c0;
+    }
+    .thirddiv{
+        width: 35%;
+        height: 35px;
+        margin-right: 2.5%;
+        border: 0px;
+        outline: none;
+        border-bottom: 1px solid #c0c0c0;
+    }
+    .forthdiv{
+        width: 2.5%;
+        cursor: pointer;
+    }
+    .addButton{
+        cursor: pointer;
+    }
+    .buttondiv{
+        .savebtn{
+            background: rgba(85, 36, 151, 1) !important;
+            color: #fff;
+            border: 0px;
+            outline: none;
+            padding: 5px 25px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 15px;
+        }
+        .cancelbtn{
+            background: #c0c0c0;
+            border: 0px;
+            outline: none;
+            padding: 5px 25px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 15px;
+        }
+    }
+}

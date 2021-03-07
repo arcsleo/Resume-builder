@@ -1,0 +1,49 @@
+.maindiv{
+    min-height: 100vh !important;
+    // background-color: #f0f0f0;
+    .sidediv{
+        background-color: rgba(85, 36, 151, 1);
+        height: 100vh;
+        .welcomeText{
+            color: #fff;
+            font-size: 1.7em;
+            font-weight: 800;
+        }
+        .subText{
+            color: #fff;
+            font-size: 1em;
+        }
+    }
+    .tabHead{
+        .singleTab{
+            height: 50px;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 0px 40px;
+            background: #c0c0c0c0;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            margin-right: 5px;
+            color: #000;
+            cursor: pointer;
+        }
+        .active{
+            background-color: rgba(85, 36, 151, 1) !important;
+            color: #fff !important;
+        }
+        .editbutton{
+            background: rgba(85, 36, 151, 1) !important;
+            color: #fff;
+            border: 0px;
+            outline: none;
+            padding: 5px 25px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 15px;
+            right: 0px;
+            position: absolute;
+        }
+    }
+}
